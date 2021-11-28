@@ -1,0 +1,14 @@
+<div>
+    <h1>MUSIC POP</h1>
+</div>
+
+<div class="generalnews">
+    <div class="card" style="width: 18rem;" *ngFor="let music of musics">
+        <img src="{{music?.urlToImage}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{music?.title}}</h5>
+          <p class="card-text">{{music?.description}}.</p>
+          <a href="{{music?.url}}" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
