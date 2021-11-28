@@ -1,0 +1,14 @@
+<div>
+    <h1>ENTERTAINMENT</h1>
+</div>
+
+<div class="generalnews">
+    <div class="card" style="width: 18rem;" *ngFor="let entertain of entertains">
+        <img src="{{entertain?.urlToImage}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{entertain?.title}}</h5>
+          <p class="card-text">{{entertain?.description}}.</p>
+          <a href="{{entertain?.url}}" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>

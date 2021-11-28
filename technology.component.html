@@ -1,0 +1,14 @@
+<div>
+    <h1>TECHNOLOGY</h1>
+</div>
+
+<div class="generalnews">
+    <div class="card" style="width: 18rem;" *ngFor="let tech of techs">
+        <img src="{{tech?.urlToImage}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{tech?.title}}</h5>
+          <p class="card-text">{{tech?.description}}.</p>
+          <a href="{{tech?.url}}" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>

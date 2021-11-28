@@ -1,0 +1,14 @@
+.generalnews{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    width:100%;
+    margin:auto;
+}
+.card{
+    width:250px;
+    margin-left: 30px;
+    margin-top:20px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}

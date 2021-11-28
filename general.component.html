@@ -1,0 +1,15 @@
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 1)"
+  template="<img src='https://media.giphy.com/media/o8igknyuKs6aY/giphy.gif' />"
+>
+</ngx-spinner>
+<div class="generalnews">
+<div class="card" style="width: 18rem;" *ngFor="let gen of general">
+    <img src="{{gen?.urlToImage}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{gen?.title}}</h5>
+      <p class="card-text">{{gen?.description}}.</p>
+      <a href="{{gen?.url}}" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+</div>
